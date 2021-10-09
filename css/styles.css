@@ -4,6 +4,10 @@
     --primary-text-color: #757575;
     --second-text-color: #212121;
     --accent-color: #2196f3;
+    --hero-background-color: #2f303a;
+    --footer-contacst-color: rgba(255, 255, 255, 0.6);
+    --btn-portfolio-color: #f5f4fa;
+    --command-background: #f5f4fa;
 }
 
 
@@ -11,7 +15,7 @@
 
 body {
     color: var(--primary-text-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
     background-color: var(--primary-titele-color);
 }
@@ -40,7 +44,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--second-text-color)
+    color: var(--second-text-color);
 }
 
 .header-link {
@@ -48,24 +52,23 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--second-text-color)
-}
-
-.header-link:hover,
-.header-link:focus {
-    color: var(--accent-color);
+    color: var(--second-text-color);
 }
 
 .header-contacst-link {
-    color: var(--secondary-titele-color);
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
+.header-link:hover,
+.header-link:focus,
 .header-contacst-link:hover,
-.header-contacst-link:focus {
+.header-contacst-link:focus,
+.current,
+.a:active {
     color: var(--accent-color);
 }
 
@@ -76,7 +79,7 @@ body {
 /* ХЕРО */
 
 .hero {
-    background: #2f303a;
+    background: var(--hero-background-color);
 }
 
 .hero-title {
@@ -92,11 +95,14 @@ body {
 .btn {
     color: var(--second-text-color);
     cursor: pointer;
-    background: #F5F4FA;
+    background-color: var(--accent-color);
+    font-family: "Roboto";
+    border: 0;
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.btn:active {
     background-color: var(--accent-color);
     color: var(--primary-titele-color);
 }
@@ -116,7 +122,6 @@ body {
 }
 
 .specifications-paragraph {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -133,6 +138,10 @@ body {
 
 /* НАША КОМАНДА */
 
+.command {
+    background-color: var(--command-background);
+}
+
 .command-title {
     font-size: 36px;
     line-height: 1.16;
@@ -141,13 +150,11 @@ body {
 
 .command-item-name {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.18;
     color: var(--secondary-titele-color);
 }
 
 .command-profession {
-    font-size: 16px;
     line-height: 1.18;
 }
 
@@ -155,7 +162,7 @@ body {
 /* ФУТЕР */
 
 .footer {
-    background: #2f303a;
+    background: var(--hero-background-color);
 }
 
 .address-footer-paragraph {
@@ -168,7 +175,7 @@ body {
 .footer-contacst-link {
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-contacst-color);
 }
 
 .footer-logo {
@@ -187,10 +194,7 @@ body {
 }
 
 .address-footer-paragraph:hover,
-.address-footer-paragraph:focus {
-    color: var(--accent-color);
-}
-
+.address-footer-paragraph:focus,
 .footer-contacst-link:hover,
 .footer-contacst-link:focus {
     color: var(--accent-color);
@@ -203,17 +207,19 @@ body {
 /* MAIN */
 
 .btn-portfolio {
+    font-family: "Roboto";
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.63;
     text-align: center;
     color: var(--second-text-color);
     cursor: pointer;
-    background: #F5F4FA;
+    background: var(--btn-portfolio-color);
+    border: 0;
 }
 
 .btn-portfolio:hover,
-.btn-portfolio:focus {
+.btn-portfolio:focus,
+.btn-portfolio:active {
     background-color: var(--accent-color);
     color: var(--primary-titele-color);
 }
@@ -227,6 +233,5 @@ body {
 }
 
 .portfolio-gallery-form {
-    font-size: 16px;
     line-height: 1.88;
 }
