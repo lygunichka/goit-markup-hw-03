@@ -15,29 +15,31 @@
 
 <body>
     <header class="header">
-        <a class="header-logo link list" href="/"><span class="logo-web">Web</span>Studio</a>
-        <nav class="menu">
+        <div class="container header-container">
+            <a class="header-logo link list" href="/"><span class="logo-web">Web</span>Studio</a>
+            <nav class="menu">
+                <ul class="list">
+                    <li class="header-item"><a class="header-link link" href="./index.html">Студия</a></li>
+                    <li class="header-item"><a class="header-link link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="header-item"><a class="header-link link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
             <ul class="list">
-                <li class="header-item"><a class="header-link link" href="./index.html">Студия</a></li>
-                <li class="header-item"><a class="header-link link current" href="./portfolio.html">Портфолио</a></li>
-                <li class="header-item"><a class="header-link link" href="#">Контакты</a></li>
+                <li>
+                    <a class="header-contacst-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="header-contacst-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
             </ul>
-        </nav>
-        <ul class="list">
-            <li>
-                <a class="header-contacst-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="header-contacst-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+        </div>
     </header>
 
     <main>
         <section class="hero-portfolio">
             <h1 hidden>portfolio</h1>
             <ul class="btn-hero-portfolio list">
-                <li><button class="btn-portfolio" type="button">Все</button></li>
+                <li><button class="btn-portfolio all" type="button">Все</button></li>
                 <li><button class="btn-portfolio" type="button">Веб-сайты</button></li>
                 <li><button class="btn-portfolio" type="button">Приложения</button></li>
                 <li><button class="btn-portfolio" type="button">Дизайн</button></li>
