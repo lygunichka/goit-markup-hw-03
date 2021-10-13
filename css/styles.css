@@ -392,7 +392,7 @@ body {
 .portfolio-gallery {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc (100% / 3 - 20px);
+    flex-basis: calc(100% / 3 - 20px);
     margin-top: -20px;
     margin-left: -20px;
 }
