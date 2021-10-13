@@ -96,6 +96,12 @@ body {
     padding-bottom: 24px;
 }
 
+.header-link,
+.header-contacst-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .header-list {
     display: flex;
     align-items: center;
@@ -127,8 +133,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.header-contacst-link {
-    margin-left: 50px;
+.header-mail {
+    margin-right: 50px;
 }
 
 .header-link:hover,
@@ -149,7 +155,8 @@ body {
 .hero {
     background: var(--hero-background-color);
     text-align: center;
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
@@ -180,6 +187,8 @@ body {
 }
 
 .header-btn {
+    color: var(--primary-titele-color);
+    font-weight: 700;
     padding: 16px 32px;
     border-radius: 4px;
 }
@@ -239,10 +248,10 @@ body {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    flex-basis: calc((100% - 60px) / 3);
 }
 
 .gallery-item {
+    flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
 }
@@ -262,13 +271,14 @@ body {
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    flex-basis: calc((100% - 90px) / 4);
 }
 
 .command-item {
     background-color: var(--primary-titele-color);
     margin-left: 30px;
     margin-top: 30px;
+    flex-basis: calc((100% - 120px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .command-title {
@@ -317,8 +327,8 @@ body {
 }
 
 .footer-logo {
+    display: block;
     color: var(--primary-titele-color);
-    margin-bottom: 20px;
 }
 
 .footer-logo {
@@ -326,13 +336,14 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+    margin-bottom: 20px;
 }
 
 .address-footer-list {
     font-style: normal;
 }
 
-.footer-contacst-link {
+.address-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
