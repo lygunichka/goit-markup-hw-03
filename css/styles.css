@@ -31,6 +31,11 @@ img {
     max-width: 100%;
 }
 
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .link {
     text-decoration: none;
 }
@@ -197,7 +202,6 @@ body {
 /* ХАРАКТЕРИСТИКИ */
 
 .specifications {
-    padding-top: 94px;
     padding-bottom: 47px;
 }
 
@@ -232,7 +236,6 @@ body {
 
 .work {
     padding-top: 47px;
-    padding-bottom: 94px;
 }
 
 .work-title {
@@ -262,8 +265,6 @@ body {
 .command {
     background-color: var(--command-background);
     text-align: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .command-list {
@@ -362,11 +363,6 @@ body {
 
 /* MAIN */
 
-.hero-portfolio {
-    padding-top: 94px;
-    padding-bottom: 25px;
-}
-
 .btn-portfolio {
     font-family: "Roboto";
     font-weight: 500;
@@ -379,11 +375,12 @@ body {
     border-radius: 4px;
 }
 
-.btn-portfolio {
+.btn-portfolio-item:not(:last-child) {
     margin-right: 8px;
 }
 
 .all {
+    color: var(--primary-titele-color);
     background-color: var(--accent-color);
 }
 
@@ -400,28 +397,29 @@ body {
     color: var(--primary-titele-color);
 }
 
+
+/* !!!---- GALLERY - Portfolio---!!!! */
+
 .portfolio-gallery {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 3 - 20px);
-    margin-top: -20px;
-    margin-left: -20px;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
 .portfolio-gallery-list {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
     border: 1px solid var(--border-color);
+    flex-basis: calc((100% - 90px) / 3);
 }
 
-.portfolio-gallery-content {
-    padding-left: 24px;
+.gallery-content {
+    border: 1px solid var(--border-color);
     padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.foto-portfolio-gallery {
-    margin-bottom: 20px;
 }
 
 .portfolio-gallery-item {
